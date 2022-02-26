@@ -6,7 +6,18 @@
   If it is not, console log "Coding has its challenges."
 */
 
-//CODE HERE
+let lovesCode = true
+
+if (lovesCode === true) { 
+    console.log ('I love to code!')
+
+}
+
+if (lovesCode === false) {
+     console.log ('Coding has its challenges')
+    
+
+}
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -20,7 +31,15 @@ var brittanisBirthYear = 1986
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-//CODE HERE
+if (brittanisAge < amysAge) {
+  console.log ('Brittany is older')
+}
+  else if (brittanisAge < amysAge) {
+    console.log ('Amy is older')
+
+  } else {
+      console.log('They\'re both the same age')
+    }
 
 
 ////////// PROBLEM 3 //////////
@@ -29,7 +48,13 @@ var brittanisBirthYear = 1986
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+if (amysBirthYear === brittanisAge) {
+  console.log('Amy & Brittani were born in the same year')
+
+} else {
+    console.log('Amy & Brittani were not born in the same year')
+  }
+
 
 
 ////////// PROBLEM 4 //////////
@@ -42,7 +67,14 @@ let rain = true
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+if (temperature >= 80 && rain == true ) { 
+  console.log('Wear a T-Shirt and take an umbrella')
+
+} else if (temperature > 60 && temperature < 80 && rain == true){
+  console.log('Wear a rain jacket')
+} else if (rain == false)
+  console.log ('Wear a thin sweater')
+
 
 
 ////////// PROBLEM 5 //////////
@@ -51,8 +83,9 @@ let rain = true
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
-//CODE HERE
-
+for (let i = 0;i < 10; i++) {
+  console.log('hello')
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -60,7 +93,10 @@ let rain = true
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
 
-//CODE HERE
+
+for (let i = 0; i < 10; i ++) {
+  console.log(i + 1)
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -69,19 +105,24 @@ let rain = true
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
+for (let i = 0; i < 10 ; i ++) {
+  console.log(10 - i)
+}
+
+
+////////// PROBLEM 8 //////////
 
 let score = 0
 let passingScore = 7
-
-////////// PROBLEM 8 //////////
 
 /*
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
-//CODE HERE
-
+while (score < 7) {
+  score ++;
+  console.log('Your score is not high enough')
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -91,12 +132,23 @@ let passingScore = 7
 
 */
 
-//CODE HERE
+var changeMymind = true 
+ 
+if (changeMymind === true) {
+  console.log ('changeMyMind is equal to true')
+
+}
+else { 
+  console.log ('changeMyMind is equal to false')
+
+}
+
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
-//CODE HERE
+changeMymind = !!changeMymind
+console.log (changeMymind)
 
 
 
@@ -107,4 +159,4 @@ let passingScore = 7
 let z = 5
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
-//CODE HERE
+//CODE HER
